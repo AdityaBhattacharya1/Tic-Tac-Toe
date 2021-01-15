@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-### A terminal-based tic tac toe game, utilising the minimax algorithm. The AI-player uses a minimax algorithm to take decisions on each turn and a human player will get a recommendation before each move.
+### A terminal-based tic-tac-toe game, utilising the minimax algorithm. The AI-player uses the minimax algorithm to take decisions on each turn and the human player will get a recommendation before each move.
 
 ### Made with Python
 
@@ -14,5 +14,5 @@
 
 # To run
 
-`cd tic-tac-toe`
+`cd` into the directory and run: <br>
 `python main.py`
