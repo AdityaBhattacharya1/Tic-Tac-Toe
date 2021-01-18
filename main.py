@@ -24,7 +24,7 @@ class Tic_Tac_Toe:
         self.goal = goal
         # Create vectors
         self.vectors = [(1, 0), (0, 1), (1, 1), (-1, 1)]
-        # Set lengths
+        
         self.rows = rows
         self.columns = columns
         self.max_row_index = rows - 1
@@ -57,11 +57,11 @@ class Tic_Tac_Toe:
                     while True:
                         # Add the position
                         positions.append(self.inverted_tiles.get((sy, sx)))
-                        # Check if we have a winning position
+                        
                         if (len(positions) == self.goal):
-                            # Add winning positions
+                            
                             self.winning_positions.append(positions)
-                            # Break out from the loop
+                           
                             break
                         # Update the position
                         sy += dy
@@ -73,7 +73,7 @@ class Tic_Tac_Toe:
     # Play the game
 
     def play(self):
-        # Variables
+        
         result = None
         # Create an infinite loop
         print('Initialising board')
@@ -100,7 +100,7 @@ class Tic_Tac_Toe:
                 self.player = 'O'
             elif (self.player == 'O'):  # Human player
 
-                # Print turn
+                
                 print('Player O moving (Human) ...')
                 # Get a recommended move
                 min, py, px, depth = self.min(-sys.maxsize, sys.maxsize)
@@ -131,10 +131,10 @@ class Tic_Tac_Toe:
         # Print result
         self.print_state()
         print('Score: {0}'.format(result))
+        
     # An evaluation function to get the best move based on heuristics
-
     def get_best_move(self):
-        # Create an heuristic dictionary
+        
         heuristics = {}
         # Get all empty cells
         empty_cells = []
@@ -155,9 +155,9 @@ class Tic_Tac_Toe:
                     player_o = 0
                     start_score = 1
                     for box in win:
-                        # Get the position
+                        
                         y, x = self.tiles[box]
-                        # Count X:s and O:s
+                        
                         if(self.state[y][x] == 'X'):
                             player_x += start_score if self.player == 'X' else start_score * 2
                             start_score *= 10
@@ -194,10 +194,10 @@ class Tic_Tac_Toe:
             for x in range(self.columns):
                 if (self.state[y][x] == '.'):
                     return None
-        # Return a tie
+        
         return 'Tie'
 
-    # Check if a player has won
+    
     def player_has_won(self) -> str:
 
         # Loop the board
@@ -207,15 +207,15 @@ class Tic_Tac_Toe:
                 # Loop vectors
                 for vector in self.vectors:
 
-                    # Get the start position
+                    
                     sy, sx = (y, x)
-                    # Get vector deltas
+                    
                     dy, dx = vector
-                    # Create counters
+                    
                     steps = 0
                     player_x = 0
                     player_o = 0
-                    # Loop until we are outside the board or have moved the number of steps in the goal
+                    
                     while steps < self.goal:
                         # Add steps
                         steps += 1
@@ -242,7 +242,7 @@ class Tic_Tac_Toe:
 
     def min(self, alpha: int = -sys.maxsize, beta: int = sys.maxsize, depth: int = 0):
 
-        # Variables
+        
         min_value = sys.maxsize
         by = None
         bx = None
@@ -263,9 +263,9 @@ class Tic_Tac_Toe:
             for x in range(self.columns):
                 # Check if the tile is empty
                 if (self.state[y][x] == '.'):
-                    # Make a move
+                    
                     self.state[y][x] = 'O'
-                    # Get max value
+                    
                     max, max_y, max_x, depth = self.max(alpha, beta, depth + 1)
 
                     # Set min value to max value if it is lower than curren min value
@@ -287,7 +287,7 @@ class Tic_Tac_Toe:
     # Get max value (X)
 
     def max(self, alpha: int = -sys.maxsize, beta: int = sys.maxsize, depth: int = 0):
-        # Variables
+        
         max_value = -sys.maxsize
         by = None
         bx = None
@@ -327,7 +327,7 @@ class Tic_Tac_Toe:
                         alpha = max_value
         # Return max value
         return max_value, by, bx, depth
-    # Print the current game state
+    
 
     def print_state(self):
         for y in range(self.rows):
@@ -341,11 +341,8 @@ class Tic_Tac_Toe:
                     print('{0}  | '.format(digit), end='')
             print()
         print()
-# The main entry point for this module
-
 
 def main():
-    # Create a game
     # Tic_Tac_Toe(rows, columns, goal, max-depth)
     game = Tic_Tac_Toe(3, 3, 3, 1000)
     # Start the game
