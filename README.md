@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Game
 
-### A terminal-based tic-tac-toe game, utilising the minimax algorithm, alpha-beta pruning and cutoff. The AI-player uses the minimax algorithm to take decisions on each turn and the human player will get a recommendation before each move.
+A terminal-based tic-tac-toe game, utilising the minimax algorithm, alpha-beta pruning and cutoff. The AI-player uses the minimax algorithm to take decisions on each turn and the human player will get a recommendation before each move.
 
 # Well, what is the *Minimax Algorithm*?
 
