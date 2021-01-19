@@ -16,15 +16,18 @@ Cutoff means that we can use a fast heuristic* evaluation algorithm when we have
 *Heuristic: The objective of a heuristic is to produce a solution in a reasonable time frame that is good enough for solving the problem at hand. This solution may not be the best of all the solutions to this problem, or it may simply approximate the exact solution. But it is still valuable because finding it does not require a prohibitively long time. Heuristics may produce results by themselves, or they may be used in conjunction with optimization algorithms to improve their efficiency (e.g., they may be used to generate good seed values). For more information, visit [Wikipedia's page on heuristics](https://en.wikipedia.org/wiki/Heuristic_(computer_science)#Definition_and_motivation).*
 
 # Demo Images
+<p align="center">
 <img src="https://github.com/AdityaBhattacharya1/Tic-Tac-Toe/blob/main/Start.png" alt="start screen"/><br>
 Start screen <br><br>
-
+</p>
+<p align="center">
 <img src="https://github.com/AdityaBhattacharya1/Tic-Tac-Toe/blob/main/Human%20Wins.png" alt="Human wins the game"/><br>
 Human wins <br><br>
-
+</p>
+<p align="center">
 <img src="https://github.com/AdityaBhattacharya1/Tic-Tac-Toe/blob/main/AI%20Wins.png" alt="AI wins the game"/><br>
 AI wins <br><br>
-
+</p>
 # To clone
 
 `$ git clone https://github.com/AdityaBhattacharya1/tic-tac-toe`
