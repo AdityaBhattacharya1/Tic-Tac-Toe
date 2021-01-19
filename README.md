@@ -11,10 +11,19 @@ Every board state has a value associated with it. In a given state if the maximi
 **Victory** represents the presence of either a positive or negative score. <br>
 <hr>
 Alpha-Beta pruning and cutoff are used to speed up the search time for the minimax algorithm. Alpha-Beta pruning means that we can ignore searching through nodes that never will be chosen given the information we already have (both players are assumed to play optimally). <br>
-Cutoff means that we can use a fast heuristic* evaluation algorithm when we have reached a certain depth in the minimax search. Cutoff is used in the early phases of a game when the number of possible plays is very high. <br>
+Cutoff means that we can use a fast heuristic* evaluation algorithm when we have reached a certain depth in the minimax search. Cutoff is used in the early phases of a game when the number of possible plays is very high. <br><br>
 
 *Heuristic: The objective of a heuristic is to produce a solution in a reasonable time frame that is good enough for solving the problem at hand. This solution may not be the best of all the solutions to this problem, or it may simply approximate the exact solution. But it is still valuable because finding it does not require a prohibitively long time. Heuristics may produce results by themselves, or they may be used in conjunction with optimization algorithms to improve their efficiency (e.g., they may be used to generate good seed values). For more information, visit [Wikipedia's page on heuristics](https://en.wikipedia.org/wiki/Heuristic_(computer_science)#Definition_and_motivation).*
 
+# Demo Images
+<img src="https://github.com/AdityaBhattacharya1/Tic-Tac-Toe/blob/main/Start.png" alt="start screen"/><br>
+Start screen <br><br>
+
+<img src="https://github.com/AdityaBhattacharya1/Tic-Tac-Toe/blob/main/Human%20Wins.png" alt="Human wins the game"/><br>
+Human wins <br><br>
+
+<img src="https://github.com/AdityaBhattacharya1/Tic-Tac-Toe/blob/main/AI%20Wins.png" alt="AI wins the game"/><br>
+AI wins <br><br>
 
 # To clone
 
