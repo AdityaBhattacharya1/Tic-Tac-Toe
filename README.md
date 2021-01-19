@@ -9,7 +9,7 @@ Every board state has a value associated with it. In a given state if the maximi
 ### Taking the example of the tic-tac-toe game, <br>
 **Tie** represents a null or balanced state between the maximizer and the minimizer. <br>
 **Victory** represents the presence of either a positive or negative score. <br>
-<hr><br>
+<hr>
 Alpha-Beta pruning and cutoff are used to speed up the search time for the minimax algorithm. Alpha-Beta pruning means that we can ignore searching through nodes that never will be chosen given the information we already have (both players are assumed to play optimally). <br>
 Cutoff means that we can use a fast heuristic* evaluation algorithm when we have reached a certain depth in the minimax search. Cutoff is used in the early phases of a game when the number of possible plays is very high. <br>
 
