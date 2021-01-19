@@ -28,6 +28,7 @@ Human wins <br><br>
 <img src="https://github.com/AdityaBhattacharya1/Tic-Tac-Toe/blob/main/AI%20Wins.png" alt="AI wins the game"/><br>
 AI wins <br><br>
 </p>
+
 # To clone
 
 `$ git clone https://github.com/AdityaBhattacharya1/tic-tac-toe`
